@@ -20,4 +20,4 @@ The controller implements the following features:
 
 ## Supported JDK
 - Support JDK 17 by default.
-- Change Java version to other version and remove `--add-opens java.base/java.lang=ALL-UNNAMED` configuration from maven-surefire-plugin if run with JDK 8/9/11.
+- Change Java version to other version and remove `--add-opens java.base/java.lang=ALL-UNNAMED` configuration from maven-surefire-plugin in pom.xml if run with JDK 8/9/11.
