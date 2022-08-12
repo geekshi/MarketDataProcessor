@@ -18,5 +18,6 @@ The controller implements the following features:
 ## Run tests
 - Execute `./mvn test`
 
-## JDK
-- JDK 8+
+## Supported JDK
+- Support JDK 17 by default.
+- Change Java version to other version and remove `--add-opens java.base/java.lang=ALL-UNNAMED` configuration from maven-surefire-plugin if run with JDK 8/9/11.
