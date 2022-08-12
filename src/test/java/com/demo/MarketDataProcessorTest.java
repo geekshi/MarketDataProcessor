@@ -77,7 +77,7 @@ public class MarketDataProcessorTest {
         assertEquals(3.0, publishedSymbols.get("S1"));
         assertEquals(3.0, publishedSymbols.get("S2"));
         assertEquals(3.0, publishedSymbols.get("S3"));
-        verify(mockProcessor, times(3)).publishAggregatedMarketData(any());
+        assertEquals(3, publishedSymbols.size());
         mockProcessor.stopWorkerThread();
     }
 
